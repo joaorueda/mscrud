@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "68196923-58c7-41d1-b565-10239d5258f0",
+		"name": "ms-crud",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "criar registro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"joao rueda\",\r\n    \"documento\":\"1\",\r\n    \"endereco\": \"rua maximiliano vaz silva, 86 - sfglória/mg\",\r\n    \"idade\":40\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/crud/registro",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"crud",
+						"registro"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editar registro",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"joao marcos falcao rueda\",\r\n    \"documento\":\"1\",\r\n    \"endereco\": \"rua maximiliano vaz silva, 86 - sfglória/mg\",\r\n    \"idade\":40\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/crud/registro",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"crud",
+						"registro"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "retornar registro",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/crud/registro/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"crud",
+						"registro",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletar registro",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/crud/registro/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"crud",
+						"registro",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "retornar lista registros",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/crud/registro",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"crud",
+						"registro"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
